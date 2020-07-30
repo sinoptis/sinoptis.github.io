@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+      .center
+      {
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+  </style>
+</head>
+<body>
+    
+</body>
+<script>
+  window.onload = function(){
+    //sHeight
+    let sHeight = window.innerHeight * 0.95;
+    let sWidth = (sHeight * 9) / 16;
+    let iframe = document.createElement("iframe");
+    document.body.appendChild(iframe);
+    iframe.height = sHeight;
+    iframe.width = sWidth;  
+    iframe.className = 'center';
+    iframe.src = 'index.html'
+  };
+</script>
+</html>
